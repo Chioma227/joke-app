@@ -39,6 +39,7 @@
     width: fit-content;
     margin: auto;
     margin-top: 55px;
+
 }
 
 .button a {
@@ -50,6 +51,10 @@
     border-radius: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.3s;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .button a:hover {
@@ -92,6 +97,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -114,6 +123,10 @@
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 7px;
     box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.7);
@@ -130,6 +143,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -149,6 +166,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -168,6 +189,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -187,6 +212,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -206,6 +235,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -225,6 +258,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -262,6 +299,10 @@
     color: white;
     text-decoration: none;
     font-size: 25px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     padding: 20px 45px;
@@ -362,6 +403,10 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     text-transform: uppercase;
 }
 
@@ -374,6 +419,10 @@
     padding: 6px 20px;
     font-size: 15px;
     cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #fav {
@@ -382,17 +431,23 @@
     cursor: pointer;
 
 }
-
+.times i{
+    color: white;
+    font-size: 40px;
+    margin-left: 85%;
+    margin-top: 20px;
+}
 @media (max-width:1024px) {
     .side-bar {
-
         display: none;
     }
-
+    .times i{
+       display: none;
+    }
     .nav {
         height: 70px;
         background-color: transparent;
-        box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.4);
+        box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
         display: block;
     }
 
@@ -403,7 +458,7 @@
         width: 300px;
         top: 70px;
         transition: 0.3s;
-        left: -100%;
+        top: -100%;
     }
 
     .bg2 {
@@ -441,6 +496,8 @@
         line-height: 70px;
         margin-left: 30px;
         display: block;
+        float: right;
+        margin-right: 20px;
     }
 
     .grid2 {
@@ -487,17 +544,32 @@
         gap: 20px;
         flex-direction: column;
     }
-
+    .times i{
+        display: block;
+     }
     .nav ul {
-        width: 200px;
+        height: 70vh;
+        width: 100%;
+       
+    }
+    .nav ul li a i{
+        display: none;
     }
 
     .nav ul li a {
         font-size: 15px;
+      
+    }
+    .nav span{
+        margin: 0;
     }
 
     .nav ul li {
+        margin-top: 40px;
+        margin: 0;
+        text-align: center;
         line-height: 6 0px;
+       
     }
 
     .grid>a {
@@ -524,6 +596,8 @@
         padding: 13px;
         width: 280px;
         height: 200px;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1022%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(106%2c 43%2c 195%2c 1)'%3e%3c/rect%3e%3cpath d='M782.731791808643 458.3317679407851L886.1690298618585 436.34550427155 760.745528139408 354.89452988756966z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M533.5048714463773 44.988425897746986L586.3464276609516 163.67250434600777 652.188949894638-7.853130316827318z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M348.6882759828078 170.6741828865447L422.10540572278546 198.8563785492511 427.6701343468562 74.63958610793144z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1371.4435102495877 408.37843812399655L1538.7150901610019 323.350013458463 1402.729019463626 231.62625060114664z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M736.1117269089083 377.15742390014054L925.1938546697502 364.1165819274257 834.9579683581672 225.16550211746315z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1348.044879997729 228.46688270224143L1410.618282986717 179.57918234533253 1306.0000309568597 110.16292804030468z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M378.78554498190397 538.518940527736L430.42100573943884 586.6697866638065 476.82954456477705 485.1411724594689z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M858.5714631170125 169.23931148705853L910.6298353597442 46.59747207808529 735.9296237080392 117.1809392443268z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M833.9725990213401 133.27272020533348L964.1792124240663 27.833483655410845 728.5333624714175 3.066106802607237z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1336.7343189436594 433.2701480201621L1324.822367201009 518.0280887843195 1421.4922597078169 445.18209976281264z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M38.79723157283186 372.90068115035496L92.65721203404746 424.9126596930791 143.74518961752588 318.11669972989364z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M642.6453421753727 487.1139094546467L573.5590666891493 338.58852239297516 489.3923312635328 454.43409533787434z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1408.9205403825604 579.5864621299967L1351.2224170329987 490.55349788512285 1307.68227973956 572.440586397706z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M993.866419165951 241.19055169034442L947.7302396337276 425.48425508769094 1108.1445608991532 382.50136725023344z' fill='rgba(16%2c 8%2c 93%2c 0.83)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1022'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+        background-position: center;
     }
 
     .grid2>div h2 {
@@ -557,5 +631,5 @@
     }
 }
 #check:checked~ul {
-    left: 0;
+    top: 0;
 }
